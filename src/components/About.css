@@ -1,0 +1,25 @@
+.bubble {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    background: #32557f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin: 10px;
+  }
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-top-color: #32557f;
+    border-bottom: 0;
+    margin-left: -13px;
+    margin-bottom: -13px;
+  }
