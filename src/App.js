@@ -5,11 +5,13 @@ import Navbar from './components/Navbar'
 import { Route, Router, Routes } from 'react-router-dom';
 import About from './components/About';
 import Work from './components/Work';
+import Skills from './components/Skills';
 
 function App() {
   return (
     <>
-    <About />
+    <Skills />
+    {/* <About /> */}
     {/* <Navbar />
     <Routes>
       <Route path='/' element={<Home/>}/>

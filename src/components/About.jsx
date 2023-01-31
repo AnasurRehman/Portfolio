@@ -3,6 +3,28 @@ import React from "react";
 import "./About.css";
 
 const About = () => {
+  const features = [
+    {
+      icon: 'fa-solid fa-rocket',
+      heading: 'Fast',
+      desc: 'Fast load times without any lagging is my first priorty'
+    },
+    {
+      icon: 'fa-solid fa-mobile-screen',
+      heading: 'Responsive',
+      desc: 'My code is compatible with any device.'
+    },
+    {
+      icon: 'fas fa-lightbulb',
+      heading: 'Intuitive',
+      desc: 'Strong preference for easy to use, intuitive UI/UX.'
+    },
+    {
+      icon: 'fa-solid fa-bolt',
+      heading: 'Dynamic',
+      desc: 'I can develop websites both Static and Dynamic.'
+    }
+  ]
   return (
     <>
       <Box>
@@ -11,7 +33,9 @@ const About = () => {
         </Typography>
 
         <Grid container>
-          <Grid
+          {features.map((item) => {
+            return(
+              <Grid
             item
             xs={12}
             sm={6}
@@ -24,77 +48,17 @@ const About = () => {
             }}
           >
             <Box className="bubble">
-              <i class="fa-solid fa-rocket"></i>
+              <i className={item.icon}/>
             </Box>
-            <Typography variant="h4">Fast</Typography>
+            <Typography variant="h4">{item.heading}</Typography>
             <Typography variant="h5" align="center">
-              Fast load times without any lagging is my first priorty
+              {item.desc}
             </Typography>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={3}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-          >
-            <Box className="bubble">
-              <i className="fa-solid fa-mobile-screen"></i>
-            </Box>
-            <Typography variant="h4">Responsive</Typography>
-            <Typography variant="h5" align="center">
-              My code is compatible with any device.
-            </Typography>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={3}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-          >
-            <Box className="bubble">
-              <i class="fa-solid fa-rocket"></i>
-            </Box>
-            <Typography variant="h4">Fast</Typography>
-            <Typography variant="h5" align="center">
-              Fast load times without any lagging is my first priorty
-            </Typography>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={3}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-          >
-            <Box className="bubble">
-              <i class="fa-solid fa-rocket"></i>
-            </Box>
-            <Typography variant="h4">Fast</Typography>
-            <Typography variant="h5" align="center">
-              Fast load times without any lagging is my first priorty
-            </Typography>
-          </Grid>
+          
+           </Grid>
+            )
+          })}
         </Grid>
-
-        <Stack></Stack>
-
         <Typography variant="h4">
           My name is <b>Anas ur Rehman</b>. My interests are in Front End
           Engineering, and I love to convert beautiful designs into beautiful
