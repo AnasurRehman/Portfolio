@@ -10,8 +10,8 @@ import Skills from './components/Skills';
 function App() {
   return (
     <>
-    <Skills />
-    {/* <About /> */}
+    {/* <Skills /> */}
+    <About />
     {/* <Navbar />
     <Routes>
       <Route path='/' element={<Home/>}/>
