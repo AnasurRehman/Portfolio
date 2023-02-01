@@ -19,13 +19,15 @@ export const colors = {
   copperRose: '#9A6556',
   ghostWhite: '#F9F9F9',
   white: '#FFFFFF',
-  vividBlue: '0099FF',
-  darkGray: '#363636',
+  vividBlue: '#0099FF',
+  lightGray: '#363636',
   black: '#1D1D1D',
   mistyRose: 'FDDFDD',
   orange: '#F87323',
   apricot: '#41372F',
-  nightRider: '#323232'
+  darkGrey: '#323232',
+  red: '#FF0000',
+  grey: '#474747'
 };
 
 export const params = {
@@ -35,26 +37,20 @@ export const params = {
 export const theme = createTheme({
   palette: {
     primary: {
-      main: colors.green,
+      main: colors.orange,
     },
     secondary: {
-      main: colors.blue,
-    },
-    error: {
-      main: colors.red,
-    },
-    warning: {
-      main: colors.yellow,
+      main: colors.vividBlue,
     },
     info: {
-      main: colors.slate,
+      main: colors.primary,
     },
     success: {
-      main: colors.darkGreen,
+      main: colors.primary,
     },
     neutral: {
-      light: colors.backgroundGrey,
-      main: colors.activeGrey,
+      light: colors.grey,
+      main: colors.lightGrey,
       dark: colors.darkGrey,
       contrastText: colors.black,
     },
@@ -63,12 +59,12 @@ export const theme = createTheme({
     },
     common: { ...colors },
     text: {
-      primary: colors.black,
-      secondary: colors.white,
+      primary: colors.white,
+      secondary: colors.black,
       disabled: colors.grey,
     },
     background: {
-      default: colors.backgroundGrey,
+      default: colors.navy,
       paper: colors.white,
     },
   },
@@ -121,7 +117,7 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: params.borderRadius * 3,
+          borderRadius: params.borderRadius * 5,
           textTransform: "none",
           fontSize: 16,
           color: colors.white,
@@ -131,7 +127,29 @@ export const theme = createTheme({
           whiteSpace: "nowrap",
           overflow: "hidden",
           textOverflow: "ellipsis",
+          '&:hover': {
+            transition: '0.7s',
+            backgroundColor: colors.vividBlue
+          }
         },
+        outlined: {
+          textTransform: 'none',
+          fontSize: 16,
+          color: colors.orange,
+          padding: "0px 30px",
+          boxShadow: "none",
+          height: 49,
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          border: '2px solid',
+          '&:hover': {
+            transition: '0.7s ease',
+            backgroundColor: colors.vividBlue,
+            border: 'none',
+            color: colors.white
+          }
+        }
       },
     },
     MuiIconButton: {
@@ -149,6 +167,7 @@ export const theme = createTheme({
         root: {
           borderRadius: 5,
           boxShadow: "0 0 0 #000",
+          marginRight: '2rem'
         },
       },
     },
