@@ -3,7 +3,12 @@
     justify-content: center;
     align-items: center;
     height: 1033px;
+    background-color: #000000;
 }
 .name {
     color: #FF0000
+}
+
+.as {
+    z-index: 1;
 }

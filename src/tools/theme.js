@@ -209,40 +209,40 @@ export const theme = createTheme({
         },
       },
     },
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          borderRadius: params.borderRadius * 2,
-          border: `1px solid ${colors.borderGrey}`,
-          boxShadow: "0px 2px 6px -2px rgba(0, 0, 0, 0.05)",
-        },
-      },
-    },
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          padding: "15px",
-          border: `1px solid ${colors.borderGrey}`,
-          borderRadius: `${params.borderRadius * 3}px !important`,
-        },
-      },
-    },
-    MuiInput: {
-      styleOverrides: {
-        root: {
-          "& .MuiInput-input": {
-            "-webkit-text-fill-color": `${colors.black} !important`,
-            padding: 0,
-          },
-          "&::before,&::after": {
-            display: "none",
-          },
-          "&.Mui-disabled": {
-            background: colors.backgroundGrey,
-          },
-        },
-      },
-    },
+    // MuiPaper: {
+    //   styleOverrides: {
+    //     root: {
+    //       borderRadius: params.borderRadius * 2,
+    //       border: `1px solid ${colors.borderGrey}`,
+    //       boxShadow: "0px 2px 6px -2px rgba(0, 0, 0, 0.05)",
+    //     },
+    //   },
+    // },
+    // MuiTextField: {
+    //   styleOverrides: {
+    //     root: {
+    //       padding: "15px",
+    //       border: `1px solid ${colors.borderGrey}`,
+    //       borderRadius: `${params.borderRadius * 3}px !important`,
+    //     },
+    //   },
+    // },
+    // MuiInput: {
+    //   styleOverrides: {
+    //     root: {
+    //       "& .MuiInput-input": {
+    //         "-webkit-text-fill-color": `${colors.black} !important`,
+    //         padding: 0,
+    //       },
+    //       "&::before,&::after": {
+    //         display: "none",
+    //       },
+    //       "&.Mui-disabled": {
+    //         background: colors.backgroundGrey,
+    //       },
+    //     },
+    //   },
+    // },
 
     MuiInputAdornment: {
       styleOverrides: {

@@ -1,6 +1,11 @@
 import { Button, Box, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import About from './About';
+import Work from './Work';
+import Skills from './Skills';
+import Home from './Home'
 
 
 const Navbar = () => {
@@ -24,8 +29,14 @@ const Navbar = () => {
     ): (<Box>
          <Button variant='text'><Link to='/'>Home</Link></Button>
          <Button variant='text'><Link to='/work'>Work</Link></Button>
-         <Button variant='text'>Contact</Button>
-         <Button variant='text'>About</Button>
+         <Button variant='text'><Link to='/skills'>Skills</Link></Button>
+         <Button variant='text'><Link to='./about'>About</Link></Button>
+         <Routes>
+      {/* <Route path='/' element={<Home/>}/> */}
+      <Route path='/about' element={<About />} />   
+      <Route path='/work' element={<Work/>} />
+      <Route path='/skills' element={<Skills />} />
+    </Routes>
      </Box>)}    
     </>
   )
