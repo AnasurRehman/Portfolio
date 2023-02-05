@@ -70,20 +70,17 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      "Inter",
-      "-apple-system",
-      "BlinkMacSystemFont",
-      "Arial",
-      "sans-serif",
+      'Raleway',
+      "sans-serif"
     ].join(","),
-    fontSize: 12,
+    // fontSize: 12,
     h1: {
       fontSize: fontSizes.size1,
       fontWeight: "700",
     },
     h2: {
       fontSize: fontSizes.size2,
-      fontWeight: "700",
+      fontWeight: "400",
     },
     h3: {
       fontSize: fontSizes.size3,
@@ -91,7 +88,7 @@ export const theme = createTheme({
     },
     h4: {
       fontSize: fontSizes.size4,
-      fontWeight: "700",
+      fontWeight: "400",
     },
     h5: {
       fontSize: fontSizes.size5,

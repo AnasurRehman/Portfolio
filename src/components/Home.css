@@ -1,9 +1,14 @@
-.home {
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1033px;
+    height: 1000px;
+    flex-direction: column;
+    position: relative;
 }
 .name {
     color: #FF0000
+}
+#tsparticles {
+    position: absolute;
 }

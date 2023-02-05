@@ -1,7 +1,7 @@
 import { Button, Box, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-
+import './Navbar.css';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,8 @@ const Navbar = () => {
       <MenuItem>About</MenuItem>
     </Menu>
     </>
-    ): (<Box>
+    ): (
+    <Box className="navbarDesktop">
          <Button variant='text'><Link to='/'>Home</Link></Button>
          <Button variant='text'><Link to='/work'>Work</Link></Button>
          <Button variant='text'>Contact</Button>

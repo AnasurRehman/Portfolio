@@ -1,0 +1,7 @@
+.navbarDesktop {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff !important;
+    justify-content: left;
+    display: flex;
+}
