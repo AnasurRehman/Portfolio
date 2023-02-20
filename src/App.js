@@ -6,22 +6,23 @@ import { Route, Router, Routes } from 'react-router-dom';
 import About from './components/About';
 import Work from './components/Work';
 import Skills from './components/skills/Skills';
+import Test from './Test';
 
 function App() {
   return (
     
-    <Stack className= 'App'>
-    <Home />
-    <Navbar />
-    <About />
-    <Skills />
-    {/* <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/about' element={<About />} />   
-      <Route path='/work' element={<Work/>} />
-    </Routes> */}
-    </Stack>
-    
+    // <Stack className= 'App'>
+    // <Home />
+    // <Navbar />
+    // <About />
+    // <Skills />
+    // {/* <Routes>
+    //   <Route path='/' element={<Home/>}/>
+    //   <Route path='/about' element={<About />} />   
+    //   <Route path='/work' element={<Work/>} />
+    // </Routes> */}
+    // </Stack>
+    <Test />
   );
 }
 
